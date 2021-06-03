@@ -1,0 +1,189 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.8rem; 
+    font-weight: 400;
+    line-height: 1.4;
+    color: whitesmoke;
+  }
+#navbar{
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: dimgray;
+    height: 5rem;
+}
+
+#navbar ul{
+    display: flex;
+    margin-right: 4rem;
+
+}
+
+#navbar ul li{
+    display: flex;
+    padding-top: 27px;
+    margin-right: 2.5rem;
+}
+
+#navbar ul li a{
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 1rem;
+    transition: 0.3s;
+    text-align: center;
+
+}
+
+#navbar ul li a:hover{
+    cursor: pointer;
+    color: lightblue;
+    transform: translateY(-10px);
+    
+}
+
+#welcome-section {
+    display: flex;
+    justify-content: center;
+    background-color: dodgerblue;
+    width: 100%;
+    align-items: center;
+    height: 100vh;
+    color: darksalmon;    
+}
+
+.wel{
+    text-align: center;
+    transition: 0.3s;
+}
+#welcome-section h5{
+    color: white;
+}
+
+.wel:hover{
+    transform: translateX(-20px);
+}
+
+#projects{
+    background-color: wheat;
+    display: grid;
+    width: 100%;
+}
+.pjh{
+    text-align: center;
+    padding-top: 3rem;
+    padding-bottom: 4rem;
+    color: black;
+}
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    align-items: center;  
+    text-align: center;
+    padding-bottom: 3rem;
+}
+
+.container p{
+    font-size: 1rem;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.container a{
+    text-decoration: none;
+    color: black;
+}
+.container a:hover{
+    -ms-transform: scale(1.2); 
+    -webkit-transform: scale(0.4); 
+    transform: scale(1.2);
+}
+.container #pp{
+    background-color: darkseagreen;
+    /* width: fit-content; */
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 3% 3%;
+}
+
+.container #ppp{
+    background-color: darkseagreen;
+    /* width: fit-content; */
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 3% 3%;
+}
+
+#contact{
+    background-color: darkslategrey;
+    color: white;
+}
+
+#contact #pjhh{
+    text-align: center;
+    padding-top: 3rem;
+    padding-bottom: 4rem;
+} 
+#contact nav{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 5rem;
+}
+
+#contact ul{
+    display: flex;
+    margin-right: 1rem;
+
+}
+
+#contact ul li{
+    display: flex;
+    padding-top: 10px;
+    margin-right: 2rem;
+}
+
+#contact ul li a{
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 2rem;
+    transition: 0.2s;
+    text-align: center;
+
+}
+
+#contact ul li a:hover{
+    cursor: pointer;
+    color: lightblue;
+    transform: translateY(-10px);
+    
+}
+
+@media (max-width: 366px) {
+    #contact nav{
+        margin-left: 10px;
+    }
+    #contact ul {
+        align-items: center;
+    }
+}
+
+@media (max-width: 875px){
+    .container{
+        display: grid;
+        grid-template-columns: 200px 200px;
+        justify-content: center;
+    }
+
+    .container img{
+        width: 150px;
+        height: 150px;    
+    }
+}
